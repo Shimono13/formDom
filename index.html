@@ -24,13 +24,13 @@
 
     <script>
       const person = {
-        firstname: "Mario",
-        lastname: "Rossi",
-        age: 25,
+        firstName: document.getElementById("firstName").value,
+        lastName: document.getElementById("lastName").value,
+        age: document.getElementById("age").value,
       };
-      //   const jsonPerson = JSON.stringify(person);
-      //   const formElement = document.querySelector("form");
-      //   formElement.setAttribute("data-person", jsonPerson);
+      const jsonPerson = JSON.stringify(person);
+      const formElement = document.querySelector("form");
+      formElement.setAttribute("data-person", jsonPerson);
     </script>
   </body>
 </html>
